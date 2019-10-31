@@ -1,0 +1,130 @@
+/* ================================================================ BACKGROUND */
+html, body{
+    background-image: url("img/fish-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+
+/* ================================================================ NAV */
+.navbar{
+    border-radius:0;
+    background: linear-gradient(135deg, rgba(85,239,203,0.9) 0%,rgba(30,87,153,0.9) 0%,rgba(85,239,203,0.9));
+    border:none;
+    position:fixed;
+    width:100%;
+    z-index:2;
+}
+.navbar-default .navbar-brand, .navbar li a {
+    color:white !important;
+}
+
+.active a{
+    background-color:rgba(0,0,0,0.15) !important;
+}
+
+
+/* ================================================================ CARDS */
+.card-body{
+    background: linear-gradient(135deg, rgba(85,239,203,0.65) 0%,rgba(30,87,153,0.65) 0%,rgba(85,239,203,0.65));
+    border-radius: 0;
+    padding:20px;
+    margin:auto;
+    margin-top:20vh;
+    color:white;
+}
+
+.card-title{
+    font-size:3em;
+}
+
+.spacer{
+    height:20px;
+}
+
+
+
+
+.button{
+    padding: 20px;
+    border: 2px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow:hidden;
+    transition: .3s;
+    background: none;
+    border-radius: 0;
+    z-index:1;
+    font-size:1.5em;
+    width:100%;
+}
+.button:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: rgb(12, 113, 131);
+}
+.button:after {
+    height: 120%;
+    left: -10%;
+    transform: skewX(15deg);
+    z-index: -1;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+}
+.button:hover:after {
+    left: -10%;
+    width: 120%;
+}
+
+
+
+
+
+
+
+
+
+.form-control{
+    border-radius: 0;
+}
+
+#register-message{
+    color:white;
+    text-align: center;
+    margin-top:20px;
+    font-size:1em;
+}
+#register-message a{
+    color:rgb(66, 242, 255);
+}
+
+
+
+
+
+
+
+/* ================================================================ DEVICE SIZES */
+@media (min-width: 500px){ /*small*/
+    .card-body{
+        width:500px;
+    }
+}
+@media (min-width: 1200px){ /*medium*/
+
+}
+@media (min-width: 992px){ /*large*/
+
+}

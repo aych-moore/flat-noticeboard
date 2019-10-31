@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flatfish</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Flatfish Chat</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Messages <span class="sr-only">(current)</span></a></li>
+              <!-- <li><a href="#">Link</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    <div class="container">
+      
+      <!-- =============================== LOG IN =============================== -->
+      <div class="row" id="log-in-section">
+          <div class="card-body">
+              <h5 class="card-title text-center">SIGN IN</h5>
+              <div class="spacer"></div>
+
+              <form class="form-signin">
+                  <div class="form-label-group">
+                      <label for="inputEmail">Email address</label>
+                      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  </div>
+
+                  <div class="spacer"></div>
+
+                  <div class="form-label-group">
+                      <label for="inputPassword">Password</label>
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  </div>
+
+                  <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Remember password</label>
+                  </div>
+
+                  <div class="spacer"></div>
+
+                  <button type="submit" class="button">SIGN IN</button>
+
+              </form>
+          </div>
+          <p id="register-message">Don't have an account? <a href="#">Sign up here</a></p>
+        </div>
+
+
+
+        <!-- =============================== SIGN UP =============================== -->
+        <div class="row" id="sign-up-section">
+            <div class="card-body">
+                <h5 class="card-title text-center">FLATFISH REGISTRATION</h5>
+                <div class="spacer"></div>
+
+                <form class="form-signin">
+                    <div class="form-label-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    </div>
+
+                    <div class="spacer"></div>
+
+                    <div class="form-label-group">
+                        <label for="inputPassword">Choose a Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    </div>
+
+                    <div class="spacer"></div>
+
+                    <button type="submit" class="button">REGISTER</button>
+
+                </form>
+            </div>
+          </div>
+
+
+          <!-- =============================== MESSAGES =============================== -->
+          <div class="row" id="messages-section">
+              <div class="card-body">
+                  <ul>
+                    <li>
+                      <h3>Hayden</h3>
+                      <p>Sha is the sexiest sexy fox.</p>
+                    </li>
+                    <li>
+                        <h3>Shara</h3>
+                        <p>I like doggie style because I'm an animal slut.</p>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+
+            <!-- =============================== SEND MESSAGE =============================== -->
+          <div class="row" id="send-message-section">
+              <div class="card-body">
+
+                      <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Your message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+
+                      <button type="submit" class="button">SEND</button>
+
+                  </form>
+              </div>
+            </div>
+
+
+
+
+      </div>
+      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
